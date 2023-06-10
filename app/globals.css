@@ -1,27 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-[#111111] font-firaMono;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .active {
+    @apply text-white px-4 py-2 font-semibold;
+  }
+
+  .icon {
+    @apply w-6 h-6 text-[#b1b1b1] group-hover:text-white transition duration-300 ease-in-out;
+  }
+
+  .box {
+    --mask: radial-gradient(
+          6.3px at 50% calc(100% + 1.75px),
+          #0000 calc(99% - 2px),
+          #000 calc(101% - 2px) 99%,
+          #0000 101%
+        )
+        calc(50% - 10px) calc(50% - 3.5px + 0.5px) / 20px 7px repeat-x,
+      radial-gradient(
+          6.3px at 50% -1.75px,
+          #0000 calc(99% - 2px),
+          #000 calc(101% - 2px) 99%,
+          #0000 101%
+        )
+        50% calc(50% + 3.5px) / 20px 7px repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+
+  .background-animate {
+    background-size: 200%;
+
+    animation: flow 6s ease infinite;
+    -webkit-animation: flow 6s ease infinite;
+    -moz-animation: flow 6s ease infinite;
+  }
+
+  @keyframes flow {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
 }
