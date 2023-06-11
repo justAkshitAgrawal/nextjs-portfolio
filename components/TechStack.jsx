@@ -17,9 +17,9 @@ const TechStack = () => {
     <SiFlutter key="flutter" className="icon" />,
   ];
   return (
-    <div className="flex items-center space-x-5 text-[#b1b1b1] ">
-      <h1>My Tech Stack |</h1>
-      <div className="flex items-center space-x-3">
+    <div className="flex max-md:flex-col items-center md:space-x-5 text-[#b1b1b1] ">
+      <h1 className=" max-md:hidden">My Tech Stack |</h1>
+      <div className="flex items-center space-x-3 ">
         {tech.map((item) => (
           <div
             className="hover:bg-[#363636] group transition duration-300 ease-in-out p-2 rounded-md"

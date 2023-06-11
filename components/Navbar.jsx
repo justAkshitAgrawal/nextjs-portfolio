@@ -11,10 +11,13 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="px-5 py-4 border-b border-[#242424] bg-[#111111] flex items-center justify-between w-full fixed backdrop-blur-lg bg-opacity-80 top-0">
-      <div className="absolute top-0 left-0 w-full h-1 bg-white bg-gradient-to-r from-yellow-500 via-pink-500 to-blue-500 !background-animate "></div>
-      <div>
+    <nav className="px-5 max-md:py-2 py-4 md:border-b z-50 border-[#242424] bg-[#111111] flex items-center justify-between w-full fixed backdrop-blur-lg bg-opacity-80 md:top-0 max-md:bottom-0 max-md:border-t ">
+      <div className="absolute max-md:bottom-0 md:top-0 left-0 w-full h-1 max-md:h-[2px] bg-white bg-gradient-to-r from-yellow-500 via-pink-500 to-blue-500 !background-animate "></div>
+      <div className=" max-md:hidden">
         <Image src="/logo-akshit.png" width={100} height={100} alt="logo" />
+      </div>
+      <div className=" md:hidden">
+        <Image src="/logo-akshit.png" width={50} height={50} alt="logo" />
       </div>
 
       <div className="flex items-center space-x-3 max-md:space-x-1 text-white/25">
