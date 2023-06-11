@@ -13,7 +13,7 @@ const About = () => {
       <div className="flex justify-center pt-36 max-md:pt-14">
         <div className="max-w-[45%] max-md:max-w-[80%] flex flex-col items-center pb-10">
           <Image
-            src="/aa.jpeg "
+            src="/aa.png "
             alt="Akshit Agrawal"
             width={900}
             height={600}
