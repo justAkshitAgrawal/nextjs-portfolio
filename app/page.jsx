@@ -1,3 +1,5 @@
+"use client";
+
 import Socials from "@/components/Socials";
 import TechStack from "@/components/TechStack";
 import { bioOptions } from "@/constants";
@@ -29,19 +31,17 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-7 max-md:mt-10">
-            <h1 className="text-center md:hidden text-[#b1b1b1] text-sm mb-2">
+          <div className="mt-7 max-md:mt-10 max-md:self-center">
+            <h1 className="text-center md:hidden text-[#b1b1b1] text-sm mb-2 ">
               My Tech Stack
             </h1>
-            <TechStack />{" "}
+            <TechStack />
           </div>
 
-          <div className="box w-full bg-[#b1b1b1]/30 h-5 mt-20 max-md:mt-8 "></div>
+          <div className="box w-full bg-[#b1b1b1]/30 h-5 mt-16 max-md:mt-8 "></div>
           <div className="mt-12 max-md:mt-8 max-md:self-center">
             <Socials />
           </div>
-
-          {/* <div className="box w-full bg-[#b1b1b1]/30 h-5 mt-20 max-md:mt-10 "></div> */}
         </div>
       </div>
     </main>

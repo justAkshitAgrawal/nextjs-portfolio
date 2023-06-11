@@ -6,7 +6,7 @@ const Work = () => {
     <div>
       <h1 className="text-3xl font-semibold ">Work</h1>
       <div className="mt-10">
-        <table className="w-full max-md:hidden ">
+        <table className="w-full max-lg:hidden ">
           {experience.map((exp) => {
             return (
               <tbody key={exp.company} className="pt-3">
@@ -20,7 +20,7 @@ const Work = () => {
           })}
         </table>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {experience.map((exp) => {
             return (
               <div key={exp.company} className="mt-5">

@@ -35,3 +35,34 @@ export const experience = [
     date: "June - July 2022",
   },
 ];
+
+export const projects = [
+  {
+    title: "NextJS Portfolio",
+    image: "/portfolio.png",
+    link: "https://akshitagrawal.dev/",
+    github: "https://github.com/justAkshitAgrawal/nextjs-portfolio",
+    info: "A potfolio website built using NextJS, TailwindCSS and Framer Motion. Completely responsive and optimized for performance.",
+  },
+  {
+    title: "E-Commerce App",
+    image: "/amp.png",
+    link: "https://e-commerce-app-kappa-two.vercel.app/",
+    github: "https://github.com/justAkshitAgrawal/e-commerce-app",
+    info: "An e-commerce app built using ReactJS, TailwindCSS and Firebase.  Login and cart functionality.",
+  },
+  {
+    title: "Bike Rental App",
+    image: "/bike.png",
+    link: "https://bike-rental-pi.vercel.app/",
+    github: "https://github.com/justAkshitAgrawal/bike-rental",
+    info: "A bike rental app built using NextJS, TailwindCSS, Framer Motion and Firebase. Login, fare calculation and booking functionality.",
+  },
+  {
+    title: "Netflix Clone",
+    image: "/netflix.png",
+    link: "https://netflix-clone-mu-lyart.vercel.app/",
+    github: "https://github.com/justAkshitAgrawal/netflix-clone",
+    info: "A Netflix clone built using ReactJS, TailwindCSS and Firebase.  Responsive, with login and trailer functionality.",
+  },
+];
