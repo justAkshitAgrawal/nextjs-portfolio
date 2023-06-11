@@ -23,7 +23,7 @@ const TechStack = () => {
         {tech.map((item) => (
           <div
             className="hover:bg-[#363636] group transition duration-300 ease-in-out p-2 rounded-md"
-            key={item}
+            key={item.key}
           >
             {item}
           </div>
