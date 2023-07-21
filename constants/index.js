@@ -25,10 +25,14 @@ export const bioOptions = [
 export const experience = [
   {
     title: "Front-End Intern",
+    company: "Lumos Labs",
+    date: "June 2023 - Current",
+  },
+  {
+    title: "Front-End Intern",
     company: "Scrollify",
     date: "Jan - Feb 2023",
   },
-
   {
     title: "Front-End Intern",
     company: "Jobs Territory",
