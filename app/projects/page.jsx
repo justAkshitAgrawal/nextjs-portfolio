@@ -7,10 +7,11 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 import { motion } from "framer-motion";
 
-export const metadata = {
-  title: "Akshit Agrawal | Projects",
-  description: "A frontend developer, who loves to build things for web.",
-};
+// export const metadata = {
+//   title: "Akshit Agrawal | Projects",
+//   description: "A frontend developer, who loves to build things for web.",
+// };
+
 const Projects = () => {
   return (
     <motion.main

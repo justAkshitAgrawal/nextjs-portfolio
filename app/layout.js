@@ -1,8 +1,5 @@
-"use client";
-
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import { AnimatePresence, motion } from "framer-motion";
 
 export const metadata = {
   title: "Akshit Agrawal | Developer",
