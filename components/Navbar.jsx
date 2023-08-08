@@ -27,20 +27,12 @@ const Navbar = () => {
       <div className="flex items-center space-x-3 max-md:space-x-1 text-white/25">
         {navbarItems.map((item) => {
           return (
-            <Link
-              key={item.name}
-              href={item.path}
-              className="relative "
-              onClick={() => {
-                if (window.scrollY > 0)
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
+            <Link key={item.name} href={item.path} className="relative ">
               <h1
                 className={
                   pathname == item.path
                     ? "active max-md:text-sm"
-                    : "px-4 py-2 max-md:text-sm"
+                    : "px-4 py-2 max-md:text-sm hover:text-white transition-all"
                 }
               >
                 {item.name}
@@ -49,12 +41,12 @@ const Navbar = () => {
                 <motion.span
                   // layoutId="box"
                   initial={{
-                    // opacity: 0,
-                    x: 500,
+                    opacity: 0,
+                    // x: 500,
                   }}
                   animate={{
-                    // opacity: 1,
-                    x: 0,
+                    opacity: 1,
+                    // x: 0,
                   }}
                   transition={{
                     delay: 0.25,

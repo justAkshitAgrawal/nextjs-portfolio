@@ -1,6 +1,10 @@
+"use client";
+
 import Work from "@/components/Work";
 import Image from "next/image";
 import React from "react";
+
+import { motion } from "framer-motion";
 
 export const metadata = {
   title: "Akshit Agrawal | About",
@@ -9,7 +13,11 @@ export const metadata = {
 
 const About = () => {
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
       <div className="flex justify-center pt-36 max-md:pt-14">
         <div className="max-w-[45%] max-md:max-w-[80%] flex flex-col items-center pb-10">
           <Image
@@ -84,7 +92,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 

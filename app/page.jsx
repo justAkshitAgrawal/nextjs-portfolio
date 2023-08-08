@@ -4,11 +4,18 @@ import Socials from "@/components/Socials";
 import TechStack from "@/components/TechStack";
 import { bioOptions } from "@/constants";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   const random = Math.floor(Math.random() * bioOptions.length);
 
   return (
-    <main className="min-h-screen bg-r">
+    <motion.main
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className="min-h-screen bg-r"
+    >
       <div className="flex justify-center pt-36 max-md:pt-14 max-md:pb-20">
         <div className="max-w-[45%] max-md:max-w-[80%] max-md:pb-5 flex flex-col items-start">
           <h1 className="text-5xl max-md:text-2xl font-semibold leading-[1.2] text-white">
@@ -44,6 +51,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 }

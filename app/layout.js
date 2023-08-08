@@ -1,5 +1,8 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const metadata = {
   title: "Akshit Agrawal | Developer",
@@ -13,7 +16,7 @@ export default function RootLayout({ children }) {
         <header className="">
           <Navbar />
         </header>
-        {children}
+        <div>{children}</div>
       </body>
     </html>
   );

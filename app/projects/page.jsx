@@ -1,7 +1,11 @@
+"use client";
+
 import { projects } from "@/constants";
 import Image from "next/image";
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+
+import { motion } from "framer-motion";
 
 export const metadata = {
   title: "Akshit Agrawal | Projects",
@@ -9,7 +13,11 @@ export const metadata = {
 };
 const Projects = () => {
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
       <div className="flex justify-center pt-36 max-md:pt-14">
         <div className="max-w-[45%] max-md:max-w-[80%] flex flex-col pb-10 max-md:pb-20 items-start w-full ">
           <h1 className="text-5xl font-semibold text-white ">Projects</h1>
@@ -22,7 +30,14 @@ const Projects = () => {
           <div className="self-center ">
             {projects.map((project) => {
               return (
-                <div key={project.title} className="mt-20 max-md:mt-10">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{ duration: 0.3, delay: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  key={project.title}
+                  className="mt-20 max-md:mt-10"
+                >
                   <div className=" bg-[#a9bebe] px-5 pt-5 rounded-md flex items-center">
                     <Image
                       src={project.image}
@@ -52,7 +67,7 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -60,7 +75,7 @@ const Projects = () => {
           <div className="box w-full bg-[#b1b1b1]/30 h-5 mt-12 "></div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 

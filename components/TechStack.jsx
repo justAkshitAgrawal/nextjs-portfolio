@@ -7,6 +7,8 @@ import {
   SiFlutter,
 } from "react-icons/si";
 
+import { motion } from "framer-motion";
+
 const TechStack = () => {
   const tech = [
     <SiJavascript key="js" className="icon" />,
@@ -16,6 +18,7 @@ const TechStack = () => {
     <SiTailwindcss key="tailwind" className="icon" />,
     <SiFlutter key="flutter" className="icon" />,
   ];
+
   return (
     <div className="flex max-md:flex-col items-center md:space-x-5 text-[#b1b1b1] ">
       <h1 className=" max-md:hidden">My Tech Stack |</h1>
