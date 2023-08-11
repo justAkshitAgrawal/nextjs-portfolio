@@ -60,7 +60,7 @@ export const projects = [
     image: "/github.png",
     link: "https://github-clone-mocha.vercel.app/",
     github: "https://github.com/justAkshitAgrawal/github-clone",
-    info: "A GitHub landing page clone built using NextJS, TailwindCSS and Framer Motion. Completely responsive and optimized for performance.",
+    info: "A GitHub landing page clone built using NextJS, TailwindCSS and Framer Motion. Completely responsive, animated and optimized for performance.",
   },
   {
     title: "E-Commerce App",
