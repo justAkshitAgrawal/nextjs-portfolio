@@ -49,19 +49,27 @@ export const projects = [
     info: "A potfolio website built using NextJS, TailwindCSS and Framer Motion. Completely responsive and optimized for performance.",
   },
   {
-    title: "E-Commerce App",
-    image: "/amp.png",
-    link: "https://e-commerce-app-kappa-two.vercel.app/",
-    github: "https://github.com/justAkshitAgrawal/e-commerce-app",
-    info: "An e-commerce app built using ReactJS, TailwindCSS and Firebase.  Login and cart functionality.",
-  },
-  {
     title: "Bike Rental App",
     image: "/bike.png",
     link: "https://bike-rental-pi.vercel.app/",
     github: "https://github.com/justAkshitAgrawal/bike-rental",
     info: "A bike rental app built using NextJS, TailwindCSS, Framer Motion and Firebase. Login, fare calculation and booking functionality.",
   },
+  {
+    title: "GitHub Landing Page",
+    image: "/github.png",
+    link: "https://github-clone-mocha.vercel.app/",
+    github: "https://github.com/justAkshitAgrawal/github-clone",
+    info: "A GitHub landing page clone built using NextJS, TailwindCSS and Framer Motion. Completely responsive and optimized for performance.",
+  },
+  {
+    title: "E-Commerce App",
+    image: "/amp.png",
+    link: "https://e-commerce-app-kappa-two.vercel.app/",
+    github: "https://github.com/justAkshitAgrawal/e-commerce-app",
+    info: "An e-commerce app built using ReactJS, TailwindCSS and Firebase.  Login and cart functionality.",
+  },
+
   {
     title: "Netflix Clone",
     image: "/netflix.png",
