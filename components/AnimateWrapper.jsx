@@ -2,13 +2,26 @@
 
 import useMousePosition from "@/utils/useMousePosition";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const AnimateWrapper = ({ children, hovered }) => {
+const AnimateWrapper = ({ children }) => {
   const { x, y } = useMousePosition();
   // use scroll position
-  const scrollX = window.scrollX;
-  const scrollY = window.scrollY;
+  const [scrollX, setScrollX] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollX(window.scrollX);
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <motion.main
