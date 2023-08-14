@@ -69,12 +69,11 @@ export const projects = [
     github: "https://github.com/justAkshitAgrawal/e-commerce-app",
     info: "An e-commerce app built using ReactJS, TailwindCSS and Firebase.  Login and cart functionality.",
   },
-
   {
-    title: "Netflix Clone",
-    image: "/netflix.png",
-    link: "https://netflix-clone-mu-lyart.vercel.app/",
-    github: "https://github.com/justAkshitAgrawal/netflix-clone",
-    info: "A Netflix clone built using ReactJS, TailwindCSS and Firebase.  Responsive, with login and trailer functionality.",
+    title: "ToDo App",
+    image: "/todo.png",
+    link: "https://todoist-woad.vercel.app/",
+    github: "https://github.com/justAkshitAgrawal/todo-app",
+    info: "A simple ToDo app built using ReactJS and TailwindCSS. Cache and CRUD functionality. Dark and light mode.",
   },
 ];

@@ -6,6 +6,7 @@ import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 import { motion } from "framer-motion";
+import AnimateWrapper from "@/components/AnimateWrapper";
 
 // export const metadata = {
 //   title: "Akshit Agrawal | Projects",
@@ -14,11 +15,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <motion.main
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.2 }}
-    >
+    <AnimateWrapper>
       <div className="flex justify-center pt-36 max-md:pt-14">
         <div className="max-w-[45%] max-md:max-w-[80%] flex flex-col pb-10 max-md:pb-20 items-start w-full ">
           <h1 className="text-5xl font-semibold text-white ">Projects</h1>
@@ -54,6 +51,8 @@ const Projects = () => {
                     <div className="flex items-center mt-5 space-x-5">
                       <a
                         href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[#242424] flex w-fit items-start  px-4 py-2 rounded-full text-[#b1b1b1] hover:text-white border-[#363636] border text-sm hover:bg-[#363636] transition duration-300 ease-in-out"
                       >
                         Project
@@ -61,6 +60,8 @@ const Projects = () => {
                       </a>
                       <a
                         href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[#242424] flex w-fit items-start  px-4 py-2 rounded-full text-[#b1b1b1] hover:text-white border-[#363636] border text-sm hover:bg-[#363636] transition duration-300 ease-in-out"
                       >
                         Github
@@ -76,7 +77,7 @@ const Projects = () => {
           <div className="box w-full bg-[#b1b1b1]/30 h-5 mt-12 "></div>
         </div>
       </div>
-    </motion.main>
+    </AnimateWrapper>
   );
 };
 
