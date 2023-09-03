@@ -23,8 +23,16 @@ const About = () => {
 
           <div className="mt-10 text-[#b1b1b1] mx-10 max-md:text-sm max-md:mx-5 pb-10">
             <p className="leading-relaxed ">
-              {`Greetings! I'm Akshit, your friendly neighborhood frontend
-              developer, passionate about creating remarkable digital
+              {`Greetings! I'm Akshit, your friendly neighborhood
+              developer, currently interning at`}{" "}
+              <a
+                href="https://www.lumoslabs.co/"
+                target="_blank"
+                className="underline underline-offset-4 max-md:underline-offset-2 decoration-double hover:text-white"
+              >
+                Lumos Labs
+              </a>
+              {`, passionate about creating remarkable digital
               experiences. With some years of experience under my belt, I
               specialize in crafting captivating interfaces for mobile and web
               applications. Simplicity and usability are the cornerstones of my

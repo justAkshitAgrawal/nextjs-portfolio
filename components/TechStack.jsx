@@ -4,10 +4,9 @@ import {
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
-  SiFlutter,
 } from "react-icons/si";
-
-import { motion } from "framer-motion";
+import { TbBrandReactNative } from "react-icons/tb";
+import { FaJava } from "react-icons/fa";
 
 const TechStack = () => {
   const tech = [
@@ -16,7 +15,8 @@ const TechStack = () => {
     <SiReact key="react" className="icon" />,
     <SiNextdotjs key="next" className="icon" />,
     <SiTailwindcss key="tailwind" className="icon" />,
-    <SiFlutter key="flutter" className="icon" />,
+    <TbBrandReactNative key="flutter" className="icon" />,
+    <FaJava key="java" className="icon" />,
   ];
 
   return (

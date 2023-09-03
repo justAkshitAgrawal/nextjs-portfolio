@@ -17,12 +17,11 @@ export default function Home() {
 
           <div className="mt-16 text-[#b1b1b1] max-md:mt-10">
             <p className="leading-loose max-md:text-sm ">
-              {`Hey, I'm Akshit, a frontend dev with a knack for making pixels
-              party! Based in India, I've been jazzing up the web
-              for more than 4 years. Specializing in crafting sleek
-              interfaces, I blend design and code to create user experiences
-              that make unicorns jealous. Let's sprinkle some magic into the
-              digital realm together!`}
+              {`Hey there, I'm Akshit, a software engineer based in India.
+              I've been dedicated to transforming the digital landscape. 
+              Specializing in the art of crafting sleek and user-friendly interfaces, 
+              I seamlessly merge design and code to engineer experiences that even unicorns would envy. 
+              Let's collaborate and bring some digital magic to life!`}
             </p>
 
             <p className="mt-10 leading-loose max-md:text-sm">
